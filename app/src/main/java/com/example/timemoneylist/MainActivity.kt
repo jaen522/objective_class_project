@@ -10,5 +10,6 @@ class MainActivity : AppCompatActivity() {
 
         val hello = "hello"
         val category = "category"
+        val difficult = " easy"
     }
 }
