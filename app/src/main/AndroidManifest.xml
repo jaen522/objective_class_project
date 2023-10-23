@@ -13,6 +13,19 @@
         android:theme="@style/Theme.TimeMoneyList"
         tools:targetApi="31">
         <activity
+            android:name=".Schedule"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.TimeMoneyList" />
+        <activity
+            android:name=".Schedule_page"
+            android:exported="false"
+            android:label="@string/title_activity_schedule_page"
+            android:theme="@style/Theme.TimeMoneyList" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

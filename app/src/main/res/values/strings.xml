@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TimeMoneyList</string>
+    <string name="title_activity_schedule_page">Schedule_page</string>
+    <string name="title_activity_main2">MainActivity2</string>
 </resources>
