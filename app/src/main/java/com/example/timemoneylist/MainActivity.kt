@@ -12,8 +12,6 @@ class MainActivity : AppCompatActivity() {
         val category = "category"
         val difficult = " easy"
 
-        print("내가 보이니") //아아아ㅏ앙아ㅏㅇ
-        //집가고싶어
-        //dmdkd
+        //응애
     }
 }
