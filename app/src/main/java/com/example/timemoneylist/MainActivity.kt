@@ -12,7 +12,5 @@ class MainActivity : AppCompatActivity() {
         val category = "category"
         val difficult = " easy"
 
-        //응애
-        val restartgo = "이제 해보자구"
     }
 }
