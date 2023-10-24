@@ -8,9 +8,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val hello = "hello"
-        val category = "category"
-        val difficult = " easy"
-
     }
 }
