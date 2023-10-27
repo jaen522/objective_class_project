@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Input_schedule" >
+
+    <EditText
+        android:id="@+id/schedule_memo"
+        android:layout_width="368dp"
+        android:layout_height="147dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="memo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <EditText
+        android:id="@+id/schedule_date"
+        android:layout_width="368dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="date"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="404dp" />
+
+    <EditText
+        android:id="@+id/schedule_name"
+        android:layout_width="368dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="196dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
