@@ -3,14 +3,21 @@ package com.example.timemoneylist
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.timemoneylist.databinding.ActivityMainScheduleBinding
+import com.example.timemoneylist.ui.theme.Input_schedule
 
 class MainActivity_schedule : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainScheduleBinding.inflate(layoutInflater)
 
-        //32분 영상부터 고고
+        //fragment를 배치하는 코드
+        supportFragmentManager.beginTransaction().run{
+            replace(binding.frmFrag.id, Input_schedule("KAU") )
+            commit()
+        }
+
         setContentView(binding.root)
 
     }
 }
+//40분까지
