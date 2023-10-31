@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.281" />
 
     <ImageButton
-        android:id="@+id/btn_back2"
+        android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_menu_revert"
@@ -33,7 +33,7 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <Button
-        android:id="@+id/btn_create2"
+        android:id="@+id/btn_create"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -46,5 +46,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/schedule_memo"
         app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:layout_width="388dp"
+        android:layout_height="349dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/schedule_name"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="196dp" />
+
+        <EditText
+            android:id="@+id/schedule_memo"
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="memo"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="247dp" />
+
+        <EditText
+            android:id="@+id/schedule_date"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="date"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="404dp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
