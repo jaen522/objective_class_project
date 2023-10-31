@@ -12,7 +12,7 @@ class MainActivity_schedule : AppCompatActivity() {
 
         //fragment를 배치하는 코드
         supportFragmentManager.beginTransaction().run{
-            replace(binding.frmFrag.id, Input_schedule("KAU") )
+            //replace(binding.schedule)
             commit()
         }
 
@@ -20,4 +20,3 @@ class MainActivity_schedule : AppCompatActivity() {
 
     }
 }
-//40분까지
