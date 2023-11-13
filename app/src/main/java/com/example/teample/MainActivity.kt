@@ -36,6 +36,6 @@ class MainActivity : AppCompatActivity() {
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.recSchedule.layoutManager=LinearLayoutManager(this)
-        binding.recSchedule.adapter
+        binding.recSchedule.adapter=ScheduleAdapter()
     }
 }
