@@ -4,8 +4,11 @@ import android.icu.text.DateFormat
 import android.icu.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.widget.CalendarView
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.teample.databinding.ActivityMainBinding
 import java.util.Date
 
 class MainActivity : AppCompatActivity() {
@@ -26,5 +29,13 @@ class MainActivity : AppCompatActivity() {
             var day:String ="${year}년 ${month}월 ${dayOfMonth}일" //날짜 변수에 담기
             txtDate.text=day  //변수 텍스트뷰에 담기
         }
+    }
+    lateinit var binding:ActivityMainBinding
+    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+        super.onCreate(savedInstanceState, persistentState)
+        binding= ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.recSchedule.layoutManager=LinearLayoutManager(this)
+        binding.recSchedule.adapter
     }
 }
