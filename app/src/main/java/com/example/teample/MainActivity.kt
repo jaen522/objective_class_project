@@ -7,14 +7,28 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import android.widget.CalendarView
 import android.widget.TextView
+import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.teample.databinding.ActivityMainBinding
 import java.util.Date
 
 class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding=ActivityMainBinding.inflate(layoutInflater)
+        val navController = binding.frgNav.getFragment<NavHostFragment>().navController
+
+        setContentView(binding.root)
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        val navController=binding.frgNav.getFragment<NavHostFragment>().navController
+
+        return navController.navigateUp()||super.onSupportNavigateUp()
+    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.fragment_main)
         //객체 생성
         val txtDate : TextView = findViewById(R.id.txt_date)
         val calendarView: CalendarView=findViewById(R.id.calendarView)

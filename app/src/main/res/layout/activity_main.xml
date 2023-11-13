@@ -6,80 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="374dp">
-
-        <CalendarView
-            android:id="@+id/calendarView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/txt_date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="일월"
-            android:textAlignment="center"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="schedule"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rec_schedule"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="to do"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <CheckBox
-                android:id="@+id/checkBox5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox" />
-        </androidx.recyclerview.widget.RecyclerView>
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="account book"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="+ 12600" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView8"
+        android:name="com.example.teample.MainFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="419dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
