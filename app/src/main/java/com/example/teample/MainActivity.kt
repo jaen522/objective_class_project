@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivityMainBinding.inflate(layoutInflater)
-        val navController = binding.frgNav.getFragment<NavHostFragment>().navController
         setContentView(binding.root)
         setContentView(R.layout.fragment_main)
         //객체 생성

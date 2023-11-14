@@ -9,11 +9,7 @@
         android:id="@+id/mainFragment"
         android:name="com.example.teample.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
-        <action
-            android:id="@+id/action_fragment_main_to_fragment_todo"
-            app:destination="@id/todoFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/todoFragment"
         android:name="com.example.teample.TodoFragment"
