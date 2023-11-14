@@ -13,21 +13,12 @@ import com.example.teample.databinding.ActivityMainBinding
 import java.util.Date
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+    lateinit var binding:ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivityMainBinding.inflate(layoutInflater)
         val navController = binding.frgNav.getFragment<NavHostFragment>().navController
-
         setContentView(binding.root)
-    }
-    override fun onSupportNavigateUp(): Boolean {
-        val navController=binding.frgNav.getFragment<NavHostFragment>().navController
-
-        return navController.navigateUp()||super.onSupportNavigateUp()
-    }
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_main)
         //객체 생성
         val txtDate : TextView = findViewById(R.id.txt_date)
@@ -44,7 +35,12 @@ class MainActivity : AppCompatActivity() {
             txtDate.text=day  //변수 텍스트뷰에 담기
         }
     }
-    lateinit var binding:ActivityMainBinding
+    override fun onSupportNavigateUp(): Boolean {
+        val navController=binding.frgNav.getFragment<NavHostFragment>().navController
+        return navController.navigateUp()||super.onSupportNavigateUp()
+    }
+
+
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
         binding= ActivityMainBinding.inflate(layoutInflater)
