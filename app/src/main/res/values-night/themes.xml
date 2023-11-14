@@ -1,6 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
     <style name="Base.Theme.TimeMoneyList" parent="Theme.Material3.DayNight.NoActionBar">
+=======
+<<<<<<< HEAD
+    <style name="Base.Theme.Teample" parent="Theme.Material3.DayNight.NoActionBar">
+=======
+    <style name="Base.Theme.TimeMoneyList" parent="Theme.Material3.DayNight.NoActionBar">
+>>>>>>> d2380d4a615f6a60effee00483550bd7e2a650c1
+>>>>>>> d5ac15bb5935f8a1df57609838f048b638b1650e
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>

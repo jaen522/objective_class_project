@@ -10,6 +10,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        android:theme="@style/Theme.Teample"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+=======
+>>>>>>> d5ac15bb5935f8a1df57609838f048b638b1650e
         android:theme="@style/Theme.TimeMoneyList"
         tools:targetApi="31">
         <activity
@@ -27,6 +36,10 @@
             android:theme="@style/Theme.TimeMoneyList" />
         <activity
             android:name=".MainActivity_schedule"
+<<<<<<< HEAD
+=======
+>>>>>>> d2380d4a615f6a60effee00483550bd7e2a650c1
+>>>>>>> d5ac15bb5935f8a1df57609838f048b638b1650e
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
