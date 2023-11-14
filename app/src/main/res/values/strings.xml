@@ -1,5 +1,11 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Teample</string>
+=======
+    <string name="app_name">TimeMoneyList</string>
+    <string name="title_activity_schedule_page">Schedule_page</string>
+    <string name="title_activity_main2">MainActivity2</string>
+>>>>>>> d2380d4a615f6a60effee00483550bd7e2a650c1
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

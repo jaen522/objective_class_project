@@ -1,9 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
     <style name="Base.Theme.Teample" parent="Theme.Material3.DayNight.NoActionBar">
+=======
+    <style name="Base.Theme.TimeMoneyList" parent="Theme.Material3.DayNight.NoActionBar">
+>>>>>>> d2380d4a615f6a60effee00483550bd7e2a650c1
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+<<<<<<< HEAD
     <style name="Theme.Teample" parent="Base.Theme.Teample" />
+=======
+    <style name="Theme.TimeMoneyList" parent="Base.Theme.TimeMoneyList" />
+>>>>>>> d2380d4a615f6a60effee00483550bd7e2a650c1
 </resources>

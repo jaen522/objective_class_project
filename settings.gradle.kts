@@ -12,7 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
 rootProject.name = "Teample"
+rootProject.name = "TimeMoneyList"
 include(":app")
  
