@@ -17,20 +17,13 @@
         android:text="schedule"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.026"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.281" />
-
-    <ImageButton
-        android:id="@+id/btn_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_menu_revert"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="16dp" />
 
     <LinearLayout
         android:layout_width="390dp"
@@ -73,12 +66,28 @@
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="404dp" />
 
-        <TextClock
-            android:id="@+id/textClock"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:text="time"
-            android:textSize="18sp" />
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/schdule_time_Start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="time"
+                android:text="start" />
+
+            <EditText
+                android:id="@+id/schedule_time_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="time"
+                android:text="end" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textView"
@@ -100,7 +109,9 @@
                 android:text="school"
                 android:textColorHighlight="@color/black"
                 android:textColorHint="@color/black"
-                android:textColorLink="@color/black" />
+                android:textColorLink="@color/black"
+                app:iconTint="#000000"
+                app:rippleColor="#000000" />
 
             <Button
                 android:id="@+id/category2"
