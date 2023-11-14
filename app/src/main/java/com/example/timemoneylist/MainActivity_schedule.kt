@@ -9,8 +9,16 @@ class MainActivity_schedule : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainScheduleBinding.inflate(layoutInflater)
 
+        val schedule_name : String
+        val schedule_memo : String
+        val schedule_date : String
+
 
         setContentView(binding.root)
+
+
+
+
 
     }
 }
